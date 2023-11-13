@@ -7,7 +7,14 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 <h1>TEST</h1>
 
-<div>{w.props.initialContacts.map(m=><h2 key={m.id}>{m.firstName}</h2>)}</div>
+<div>{w.props.initialContacts.map(m=>
+<div key={m.id}>
+<h1 className=' text-red-400 text-[88px]'>{m.firstName}</h1>
+<p>{m.lastName}</p>
+<img className='w-[50px] h-[50px] rounded-full' src={m.avatar} alt="" />
+</div>
+  
+  )}</div>
     </main>
   )
 }
