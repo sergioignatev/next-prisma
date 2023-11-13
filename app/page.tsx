@@ -11,7 +11,7 @@ export default async function Home() {
 <div key={m.id}>
 <h1 className=' text-red-400 text-[88px]'>{m.firstName}</h1>
 <p>{m.lastName}</p>
-<img className='w-[50px] h-[50px] rounded-full' src={m.avatar} alt="" />
+<img className='w-[59px] h-[50px] rounded-full' src={m.avatar} alt="" />
 </div>
   
   )}</div>
